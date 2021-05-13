@@ -1,0 +1,30 @@
+<!-- <p>login works!</p> -->
+
+<div class="container">
+    <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+        <div class="row">
+            <div class="col-md-6 text-right">
+                <label for="user" >User:</label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" id="user" formControlName="user" class="form-control"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-right" >
+                <label for="password">Pass:</label>
+            </div>
+            <div class="col-md-6">
+                <input type="pass" id="pass" formControlName="pass" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                
+            </div>
+            <div class="col-md-6">
+                <button type="submit"  class="btn btn-success">Enviar</button>
+            </div>
+        </div>
+    </form> 
+</div>
